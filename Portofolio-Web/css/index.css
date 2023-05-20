@@ -1,0 +1,48 @@
+:root {
+  /* color */
+  --body-color: #111827;
+  --highlight-color: #60e1da;
+  --big-title-color: #f7f7fa;
+  --medium-title-color: #cdcef5;
+  --text-color: #8c8db1;
+
+  /* Fontsize */
+  --small-font-size: 0.75rem;
+  --medium-font-size: 1rem;
+  --big-font-size: 1.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 3rem;
+
+  /* Fontweight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  background-color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--medium-title-color);
+}
+
+i {
+  color: var(--medium-title-color);
+}
+
+.container {
+  position: relative;
+  font-family: "Inter";
+}

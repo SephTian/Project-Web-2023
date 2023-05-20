@@ -4,9 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/nav-bar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>Portofolio JCode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <div class="asep">p</div>
+    <!-- Navbar start -->
+    <header class="header" id="header">
+      <nav class="nav">
+        <!-- Navbar logo -->
+        <a href="#" class="logo_img">JCode.</a>
+
+        <!-- Navbar menu -->
+        <div class="nav_menu" id="nav_menu">
+          <a href="#home" class="nav_link"><span>01 // </span>Home</a>
+          <a href="#about" class="nav_link"><span>02 // </span>About</a>
+          <a href="#project" class="nav_link"><span>03 // </span>Project</a>
+          <a href="#contact" class="nav_link"><span>04 // </span>Contact</a>
+
+          <!-- cancel the extra navbar -->
+          <div class="nav_close" id="nav_close">
+            <a href="#" class="icon_close" id="icon_close"
+              ><i data-feather="x"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Navbar extra for mobile -->
+        <div class="nav_hamburger" id="nav_hamburger">
+          <a href="#" class="icon_hamburg" id="icon_hamburg"
+            ><i data-feather="align-right"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Hero section start -->
+    <section class="container">
+      <div class="hero" id="home">
+        <h1 class="title_first">Hi, my name is</h1>
+        <h3 class="title_second">Joseph Christian.</h3>
+        <h2 class="title_third">
+          I build web according to the needs of customers.
+        </h2>
+        <p class="title_desc">
+          I'm a front-end web developer, always hungry for knowledge and eager
+          to learn more in this exciting field.
+        </p>
+      </div>
+    </section>
+
+    <!-- About section start -->
+    <section class="container">
+      <div class="about" id="about">
+        <div class="about_desc">
+          <h1 class="title_about"><span>02. </span>About Me</h1>
+        </div>
+        <div class="about_img"></div>
+      </div>
+    </section>
+
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
+    <!-- Main end -->
+
+    <!-- Footer start -->
+    <footer></footer>
+    <!-- Footer end -->
+
+    <script src="js/index.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

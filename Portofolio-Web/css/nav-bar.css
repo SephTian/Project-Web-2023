@@ -1,0 +1,122 @@
+@import url(index.css);
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: 100;
+  background-color: rgba(17, 24, 39, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.nav {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 7%;
+}
+
+.nav > .logo_img {
+  font-size: var(--h2-font-size);
+  color: var(--highlight-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav_menu {
+  display: flex;
+  column-gap: 1.875rem;
+}
+
+.nav_link {
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-medium);
+  transition: color 0.5s;
+}
+
+.nav_link > span {
+  color: var(--highlight-color);
+  font-size: var(--small-font-size);
+}
+
+.nav_link:hover {
+  color: var(--highlight-color);
+}
+
+.nav_link::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid var(--highlight-color);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+  transform-origin: 0 0;
+}
+
+.nav_link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav_hamburger,
+.nav_close {
+  display: none;
+}
+
+/* Media Queries */
+
+/* tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 80%;
+  }
+  .nav_hamburger {
+    display: inline-block;
+  }
+
+  .nav_close {
+    display: inline-block;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+
+  .nav > .nav_menu {
+    position: absolute;
+    display: block;
+    width: 30rem;
+    height: 100vh;
+    top: 0%;
+    right: -100%;
+    transition: 0.3s ease-in;
+    padding-top: 5rem;
+    background-color: rgb(20, 28, 45);
+  }
+
+  .nav > .nav_menu.active {
+    right: 0%;
+  }
+
+  .nav_menu .nav_link {
+    display: block;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1.5rem;
+    font-size: var(--big-font-size);
+  }
+
+  .nav_link span {
+    font-size: var(--medium-font-size);
+  }
+
+  .nav_link:hover::after {
+    transform: scaleX(0.35);
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+}

@@ -1,0 +1,8 @@
+@import url(index.css);
+
+.about {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: slategray;
+}

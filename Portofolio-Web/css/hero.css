@@ -1,0 +1,57 @@
+@import url(index.css);
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(/Portofolio-Web/asset/img/Screenshot_2023-05-18_015951-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-image: url(/Portofolio-Web/asset/img/Screenshot_2023-05-18_015951-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title_first {
+  font-weight: var(--font-semi-bold);
+  color: var(--highlight-color);
+  font-size: var(--big-font-size);
+  margin: 0px;
+}
+
+.title_second {
+  font-weight: var(--font-semi-bold);
+  color: var(--big-title-color);
+  font-size: var(--h3-font-size);
+  margin: 0px;
+}
+
+.title_third {
+  font-weight: var(--font-semi-bold);
+  color: var(--medium-title-color);
+  font-size: var(--h2-font-size);
+  margin: 0px;
+}
+
+.title_desc {
+  width: 26.875rem;
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  font-size: var(--medium-font-size);
+  margin: 0px;
+}
