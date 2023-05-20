@@ -37,7 +37,6 @@
 }
 
 .nav_link > span {
-  color: var(--highlight-color);
   font-size: var(--small-font-size);
 }
 
@@ -66,10 +65,7 @@
 /* Media Queries */
 
 /* tablet */
-@media (max-width: 758px) {
-  html {
-    font-size: 80%;
-  }
+@media (max-width: 768px) {
   .nav_hamburger {
     display: inline-block;
   }
@@ -116,7 +112,4 @@
 
 /* mobile */
 @media (max-width: 450px) {
-  html {
-    font-size: 70%;
-  }
 }

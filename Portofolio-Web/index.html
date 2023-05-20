@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/nav-bar.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Portofolio JCode</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,14 +30,22 @@
 
         <!-- Navbar menu -->
         <div class="nav_menu" id="nav_menu">
-          <a href="#home" class="nav_link"><span>01 // </span>Home</a>
-          <a href="#about" class="nav_link"><span>02 // </span>About</a>
-          <a href="#project" class="nav_link"><span>03 // </span>Project</a>
-          <a href="#contact" class="nav_link"><span>04 // </span>Contact</a>
+          <a href="#home" class="nav_link"
+            ><span class="highlight_color">01 // </span>Home</a
+          >
+          <a href="#about" class="nav_link"
+            ><span class="highlight_color">02 // </span>About</a
+          >
+          <a href="#project" class="nav_link"
+            ><span class="highlight_color">03 // </span>Project</a
+          >
+          <a href="#contact" class="nav_link"
+            ><span class="highlight_color">04 // </span>Contact</a
+          >
 
           <!-- cancel the extra navbar -->
           <div class="nav_close" id="nav_close">
-            <a href="#" class="icon_close" id="icon_close"
+            <a href="#/" class="icon_close" id="icon_close"
               ><i data-feather="x"></i
             ></a>
           </div>
@@ -44,7 +53,7 @@
 
         <!-- Navbar extra for mobile -->
         <div class="nav_hamburger" id="nav_hamburger">
-          <a href="#" class="icon_hamburg" id="icon_hamburg"
+          <a href="#/" class="icon_hamburg" id="icon_hamburg"
             ><i data-feather="align-right"></i
           ></a>
         </div>
@@ -53,8 +62,8 @@
     <!-- Navbar end -->
 
     <!-- Hero section start -->
-    <section class="container">
-      <div class="hero" id="home">
+    <section class="container" id="home">
+      <div class="hero">
         <h1 class="title_first">Hi, my name is</h1>
         <h3 class="title_second">Joseph Christian.</h3>
         <h2 class="title_third">
@@ -68,15 +77,121 @@
     </section>
 
     <!-- About section start -->
-    <section class="container">
-      <div class="about" id="about">
-        <div class="about_desc">
-          <h1 class="title_about"><span>02. </span>About Me</h1>
+    <section class="container margin_side_200" id="about">
+      <div class="two_section">
+        <div class="about">
+          <h1 class="title_section">
+            <span class="title_number_size highlight_color">02. </span>About Me
+          </h1>
+          <div class="about_desc">
+            <p class="story">
+              Hi, my real name is
+              <span class="highlight_color">Joseph Christian</span>, you can
+              call me <span class="highlight_color">Joseph</span>. I am now a
+              student majoring in business information systems currently
+              studying at a university in Surabaya, East Java.
+            </p>
+            <p class="story">
+              As a student majoring in business information systems, I like
+              technology things such as creating a website. I'm studying to be a
+              competent front end web developer.
+            </p>
+            <p class="story">
+              I have a desire to always improve my skills and knowledge. I am
+              committed to always developing into a person who can collab with
+              other people and willing to learn more.
+            </p>
+          </div>
         </div>
-        <div class="about_img"></div>
+        <div class="about_img">
+          <img src="asset/img/24266.jpg" />
+        </div>
+      </div>
+      <div style="margin-top: 70px">
+        <div class="tech_stack">
+          <div class="tech_title"><h1>Tech Stack</h1></div>
+        </div>
+        <div class="cards">
+          <div class="skill">
+            <div class="skill_img">
+              <img src="asset/img/Html.png" alt="" />
+            </div>
+            <div class="skill_name">
+              <p>HTML5</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_img">
+              <img src="asset/img/CSS.png" alt="" />
+            </div>
+            <div class="skill_name">
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_img">
+              <img src="asset/img/Javascript.png" alt="" />
+            </div>
+            <div class="skill_name">
+              <p>Javascript</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_img">
+              <img src="asset/img/Python.png" alt="" />
+            </div>
+            <div class="skill_name">
+              <p>Python</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- About section end -->
 
+    <!-- Project section start -->
+    <section
+      class="container margin_side_200"
+      id="project"
+      style="margin-top: 50px"
+    >
+      <h1 class="title_section">
+        <span class="title_number_size highlight_color">03. </span>Project that
+        i've made
+      </h1>
+    </section>
+    <!-- Project section end -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
+    <p class="title_desc">
+      I'm a front-end web developer, always hungry for knowledge and eager to
+      learn more in this exciting field.
+    </p>
     <p class="title_desc">
       I'm a front-end web developer, always hungry for knowledge and eager to
       learn more in this exciting field.

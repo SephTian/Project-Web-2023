@@ -46,3 +46,53 @@ i {
   position: relative;
   font-family: "Inter";
 }
+
+.margin_side_200 {
+  margin: 0 13.2%;
+}
+
+.title_section {
+  position: relative;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+  color: var(--medium-title-color);
+  width: fit-content;
+}
+
+.title_section::after {
+  content: "";
+  position: absolute;
+  background: var(--medium-title-color);
+  height: 3px;
+  width: 160px;
+  display: block;
+  top: 50%;
+  left: 105%;
+}
+
+.highlight_color {
+  color: var(--highlight-color);
+}
+
+.title_number_size {
+  font-size: var(--big-font-size);
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  .title_section::after {
+    width: 110px;
+  }
+}
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+  .title_section::after {
+    width: 95px;
+  }
+}
